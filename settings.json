@@ -1,0 +1,27 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange",
+  "editor.accessibilitySupport": "off",
+  "editor.guides.bracketPairs": true,
+  "editor.tabSize": 2,
+  "git.confirmSync": false,
+  "git.openRepositoryInParentFolders": "never",
+  "security.workspace.trust.untrustedFiles": "open",
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "window.confirmBeforeClose": "always",
+  "workbench.activityBar.location": "top",
+  "workbench.colorTheme": "Tokyo Night",
+  "workbench.iconTheme": "material-icon-theme",
+
+  //extensions
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "svelte.enable-ts-plugin": true
+}

@@ -1,0 +1,89 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  // Comment out selected lines
+  {
+    "key": "cmd+shift+1",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  //Integrated Terminal
+  {
+    "key": "ctrl+shift+right",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+  },
+  {
+    "key": "ctrl+shift+left",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+  },
+  //Refactor: Rename Symbol
+  {
+    "key": "shift+cmd+r",
+    "command": "editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+r",
+    "command": "-editor.action.refactor",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  //Stage selected code
+  {
+    "key": "cmd+shift+2",
+    "command": "git.stageSelectedRanges",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "cmd+shift+3",
+    "command": "git.unstageSelectedRanges",
+    "when": "isInDiffEditor"
+  },
+  //Sidebars
+  {
+    "key": "cmd+h",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  //Disable editor zoom in and out
+  {
+    "key": "",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "",
+    "command": "-workbench.action.zoomIn"
+  },
+  //Disable open project
+  {
+    "key": "",
+    "command": "-workbench.action.files.openFile"
+  },
+  {
+    "key": "shift+cmd+=",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
+  },
+  {
+    "key": "ctrl+shift+5",
+    "command": "-workbench.action.terminal.split",
+    "when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
+  },
+  {
+    "key": "shift+cmd+-",
+    "command": "workbench.action.terminal.unsplit"
+  },
+  {
+    "key": "cmd+=",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+  },
+  {
+    "key": "ctrl+shift+`",
+    "command": "-workbench.action.terminal.new",
+    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+  },
+  {
+    "key": "cmd+-",
+    "command": "workbench.action.terminal.kill"
+  }
+]
